@@ -6,12 +6,17 @@
     </title>
 </head>
 <body>
-        <div id=x>7</div>
-        <div id=y>5</div>
-        <div id=produto></div>
-        <div id=soma></div>
+        <div id="x">7</div>;
+        <div id="y">5</div>;
+        <div id="produto">35</div>;
+        <div id="soma">12</div>;
     <script>
-        
+        var x,y,produto,soma;
+        x=document.getElementById("x");
+        y=document.getElementById("y");
+        produto=document.getElementById("produto");
+        soma=document.getElementById("soma");
+        document.body.textContent="O produto de "+ x.textContent + " * " + y.textContent + " é " + produto.textContent + "! " + "A soma de "+ x.textContent + " + " + y.textContent + " é " + soma.textContent+"!";
     </script>
     
 </body>
