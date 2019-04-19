@@ -5,10 +5,12 @@
     <title>Questão 08</title>
 </head>
 <body>
-    <div id="interativo">clique-me!</div>;
-    <script>
-        
-    </script>
-    
+    <div id="interativo">clique-me!</div>
+    <script type="text/javascript">
+        var interativo = document.getElementById("interativo")
+        interativo.addEventListener("click", function() {
+            this.textContent = "funcionou!";
+            });
+    </script>   
 </body>
 </html>
