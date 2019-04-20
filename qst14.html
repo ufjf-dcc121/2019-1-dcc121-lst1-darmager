@@ -16,6 +16,12 @@
         var produto=document.getElementById("produto");
         var soma=document.getElementById("soma");
         var botao=document.getElementById("calcular");
+        botao.addEventListener("click", function contas(){
+            var vx = parseInt(x.textContent);
+            var vy = parseInt(y.textContent);
+           produto.textContent =  "O produto de " + vx + " e " + vy + " é " + (vx * vy);
+           soma.textContent =  "A soma de " + vx + " e " + vy + " é " + (vx + vy);
+        });
     </script>   
 </body>
 </html>
