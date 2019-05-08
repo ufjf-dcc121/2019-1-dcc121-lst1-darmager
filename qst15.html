@@ -17,14 +17,17 @@
         var nome= document.getElementById("n");
         var anos=document.getElementById("ano");
         var confeitaria=document.getElementById("n1");
-        var Coberturas=document,getElementById("n2");
+        var Coberturas=document.getElementById("n2");
         var bolos=document.getElementById("n3");
         var botaoAvaliar=document.getElementById("avaliar");
         var botaoLimpar=document.getElementById("limpar");
         var resultado=document.getElementById("Resultado");
         var melhorias=document.getElementById("melhorias");
-        var media;
-
+        var media=(parseInt(confeitaria.textContent)+parseInt(Coberturas.textContent)+parseInt(bolos.textContent))/3;
+        botaoLimpar.addEventListener("click", function Limparclick(){
+           resultado.textContent="";
+           melhorias.textContent="";
+        });  
     </script>
 </body>
 </html>
