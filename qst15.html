@@ -30,15 +30,15 @@
         });
         botaoAvaliar.addEventListener("click", function contas(){
            if(media>=70){
-           resultado.textContent = "Parabéns Fulano! Você está aprovado com média 70!";}
+           resultado.textContent = "Parabéns " +nome.textContent + " no Você está aprovado com "+media+" !";}
            if(media<70){
-           resultado.textContent ="Você está reprovado com média 50!";}
+           resultado.textContent ="Você está reprovado com média "+media+" !";}
            if(parseInt(confeitaria.textContent)<60){
-           melhorias.textContent="Fulano, considere estudar mais Confeitaria!";}
+           melhorias.textContent= nome.textContent +", considere estudar mais Confeitaria!";}
            if(parseInt(Coberturas.textContent)<60){
-           melhorias.textContent="Fulano, considere estudar mais Cobertura!";}
+           melhorias.textContent= nome.textContent +", considere estudar mais Cobertura!";}
            if(parseInt(bolos.textContent)<60){
-           melhorias.textContent="Fulano, considere estudar mais broas e bolos";}
+           melhorias.textContent= nome.textContent +", considere estudar mais broas e bolos";}
         });;
     </script>
 </body>
